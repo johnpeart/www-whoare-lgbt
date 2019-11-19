@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<main id="page">
+		
+	{% include header/generic.html %}
+	
+	<section id="page">
+		
+		<div class="container">
+			
+			<h1>Datasets</h1>
+			
+			<p>These are datasets of public figures who are lesbian, gay, bisexual or trans (LGBT).</p>
+			
+			<p>The data in each dataset is collected from publicly available sources, and is presented in both an easy to understand webpage and in structured data (CSV) formats.</p>
+						
+			<ul>
+
+			{% for dataset in site.data.datasets %}
+			
+				<li>
+					<a href="{{ dataset.url }}" title="{{ dataset.link-description }}">
+						<p class="dataset">
+							<span class="dataset-name">{{ dataset.name | date: "%-d %B %Y" }}</span>
+							<br>
+							<span class="label">{{ dataset.label }}</span>
+						</p>
+					</a>
+				</li>
+			{% endfor %}
+				
+			</ul>
+		
+		</div>
+		
+	</section>
+			
+</main>

@@ -1,0 +1,15 @@
+<section id="app-header" {% if page.layout contains == "app" %}class="closed"{% endif %}>
+							
+	<header class="app-header--logo">
+		
+		<div class="container">
+
+			<img class="app-header--rainbow-portcullis" src="{{ '/site/logo.svg' | prepend: site.image-path | prepend: site.asset-path | prepend: site.baseurl | prepend: site.url }}" alt="A rainbow coloured question mark">
+			<h1 class="app-header--wordmark">{{ site.title }}</h1>
+			<p class="app-header--wordmark--subtitle">Datasets of public figures who are lesbian, gay, bisexual or trans (LGBT)</p>
+						
+		</div>
+		
+	</header>
+					
+</section>
