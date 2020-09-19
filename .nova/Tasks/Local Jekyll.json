@@ -1,0 +1,17 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll build"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll clean"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll serve"
+    }
+  },
+  "identifier" : "BD4FAD76-A156-41F5-8ABC-DC979ACE102C"
+}
